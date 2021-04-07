@@ -2,96 +2,112 @@ import React from 'react';
 import '../styles/listOfCourses.css';
 
 const inicialCourses = [{
+  id: 1,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 2,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 3,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 4,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 5,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 6,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 7,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 8,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 9,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 10,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 11,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 12,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 13,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 14,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 15,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
   img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
 },
 {
+  id: 16,
   title: 'Curso de piloto',
   instructor: 'Maximilian Kaden',
   description: 'Este curso é muito bom',
@@ -107,11 +123,13 @@ class ListOfCourses extends React.Component {
   }
 
   createCourseCard(course) {
-    const { title, img, instructor } = course;
+    const {
+      title, img, instructor, id,
+    } = course;
     return (
-      <div className="course-card">
+      <div className="course-card" key={id}>
         <div className="course-card-image">
-          <img src={img} />
+          <img src={img} alt="course" />
         </div>
         <div className="course-card-informations">
           <p className="course-card-instructor">{instructor}</p>

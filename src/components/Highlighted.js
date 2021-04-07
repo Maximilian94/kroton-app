@@ -11,7 +11,7 @@ class HighlightedCourses extends React.Component {
         img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
       },
       {
-        title: 'Curso de piloto',
+        title: 'Curso de piloto 2',
         description: 'Descrição do curso',
         img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
       }],
@@ -21,7 +21,7 @@ class HighlightedCourses extends React.Component {
   createCourseBox(course) {
     const { title, description, img } = course;
     return (
-      <div className="course-highlighted">
+      <div className="course-highlighted" key={title}>
         <div className="course-highlighted-image">
           <img src={img} alt="course" />
         </div>
