@@ -7,12 +7,12 @@ class HighlightedCourses extends React.Component {
     this.state = {
       highlightedCourses: [{
         title: 'Curso de piloto',
-        description: 'Este curso é muito bom bla bla  bla bla bla bla bla bla bla bla bla bla bom bla bla  bla bla bla bla bla bla bla bla bla blabom bla bla  bla bla bla bla bla bla bla bla bla blabom bla bla  bla bla bla bla bla bla bla bla bla blabom bla bla  bla bla bla bla bla bla bla bla bla blabom bla bla  bla bla bla bla bla bla bla bla bla bla',
+        description: 'Descrição do curso',
         img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
       },
       {
         title: 'Curso de piloto',
-        description: 'Este curso é muito bom',
+        description: 'Descrição do curso',
         img: 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg',
       }],
     };
