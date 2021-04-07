@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-color: #E5E5E5;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95vw;
+}
+
+main > h2 {
+  text-align: left;
+  width: 97%;
+}

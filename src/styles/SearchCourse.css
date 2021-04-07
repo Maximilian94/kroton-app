@@ -1,0 +1,121 @@
+.search-course-box {
+  width: 88vw;
+  height: 160px;
+  background-color:hsl(0, 0%, 100%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.search-course-box p {
+  font-weight: 500;
+  font-size: 24px;
+  color: #005EA4;
+}
+
+.search-course-inputs {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.shearch-field-input {
+  display: flex;
+  flex-direction: column;
+  color: #828282;
+  width: 30%;
+}
+
+.shearch-field-input label{
+  color: #4F4F4F;
+}
+
+.shearch-field-input input {
+  background-color: #FFFFFF;
+  color: #828282;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 51px;
+}
+
+.shearch-field-input select {
+    background-color: #FFFFFF;
+    color: #828282;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 51px;
+}
+
+.search-course-box button {
+  background-color: #0067F6;
+  color: #f1f1f1;
+  border-radius: 4px;
+  width: 51px;
+  height: 51px;
+}
+
+.shearch-field-button {
+  margin-bottom: 1vh;
+}
+
+.button-written {
+  display: none;
+}
+
+.button-icon {
+  display: block;
+}
+
+label { 
+  display:block; 
+  }
+
+@media (max-width: 480px) {
+  .search-course-box {
+    height: auto;
+  }
+
+  .button-icon {
+    display: none;
+  }
+
+  .search-course-box p {
+    font-size: 16px;
+    color: white;
+  }
+
+  .button-written {
+    display: block;
+  }
+
+  .shearch-search-name{
+    display: block;
+  }
+
+  .shearch-icon::before{
+    content: "buscar...";
+  }
+
+  .search-course-box button{
+    width: 70vw;
+  }
+
+  .search-course-inputs{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shearch-field-input {
+    width: 100%;
+  }
+}
